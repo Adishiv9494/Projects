@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Calculator</title>
+  <style>
+    input[type="number"] {
+      margin: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid rgb(18, 206, 115);
+    }
+    input[type="button"] {
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid rgb(26, 25, 25);
+      background-color: skyblue;
+      color: rgb(4, 58, 144);
+      font-weight: bold;
+    }
+    input[type="text"] {
+      margin: 5px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid rgb(237, 30, 30);
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Calculator</h1>
+  <form>
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1" name="num1"><br><br>
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2" name="num2"><br><br>
+    <input type="button" value="Add" onclick="add()">
+    <input type="button" value="Subtract" onclick="subtract()">
+    <input type="button" value="Multiply" onclick="multiply()">
+    <input type="button" value="Divide" onclick="divide()">
+  </form>
+  <br>
+  <label for="result">Result:</label>
+  <input type="text" id="result" name="result">
+  <script>
+    function add() {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let result = Number(num1) + Number(num2);
+      document.getElementById("result").value = result;
+    }
+    function subtract() {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let result = Number(num1) - Number(num2);
+      document.getElementById("result").value = result;
+    }
+    function multiply() {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let result = Number(num1) * Number(num2);
+      document.getElementById("result").value = result;
+    }
+    function divide() {
+      let num1 = document.getElementById("num1").value;
+      let num2 = document.getElementById("num2").value;
+      let result = Number(num1) / Number(num2);
+      document.getElementById("result").value = result;
+    }
+  </script>
+</body>
+</html>

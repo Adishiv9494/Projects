@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator Program in JavaScript</title>
+  
+  
+  <style>
+    input[type="number"] {
+      margin: 5px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 2px solid rgb(31, 31, 31);
+    }
+    input[type="button"] {
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid rgb(8, 91, 235);
+      background-color: rgb(18, 191, 214);
+      color: rgb(22, 21, 21);
+      font-weight: bold;
+    }
+    input[type="text"] {
+      margin: 5px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid rgb(11, 10, 10);
+    }
+    .calculator {
+      width: 500px;
+      height: px;
+      margin: auto;
+      border: 5px solid black;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    
+    
+    #num1 {
+      width: px;
+      border: px solid black;
+      border-radius: 3px;
+      padding: 5px;
+      margin: auto;
+    }
+    #num2 {
+      width: px;
+      border: px solid black;
+      border-radius: 3px;
+      padding: 5px;
+      margin: auto;
+    }
+    #result {
+      width: px;
+      border: px solid black;
+      border-radius: 3px;
+      padding: 5px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+    <h1 align ="center"></b>Calculator Program in JavaScript</h1>
+  <div class="calculator">
+    <n name="form1">
+            <h1>Calculator</h1>
+            <label for="num1"><b>Enter first number:</label>
+            <input type="number" id="num1" name="num1"><br><br>
+            <label for="num2">Enter second number:</label>
+            <input type="number" id="num2" name="num2"><br><br>
+            
+          <label for="result">Result:</label>
+          <input type="number" id="result" name="result">
+          <br><br>
+            <input type="button" value="Add" onclick="add()">
+            <input type="button" value="Subtract" onclick="subtract()">
+            <input type="button" value="Multiply" onclick="multiply()">
+            <input type="button" value="Divide" onclick="divide()">
+          <script>
+            function add() {
+              let num1 = document.getElementById("num1").value;
+              let num2 = document.getElementById("num2").value;
+              let result = Number(num1) + Number(num2);
+              document.getElementById("result").value = result;
+            }
+            function subtract() {
+              let num1 = document.getElementById("num1").value;
+              let num2 = document.getElementById("num2").value;
+              let result = Number(num1) - Number(num2);
+              document.getElementById("result").value = result;
+            }
+            function multiply() {
+              let num1 = document.getElementById("num1").value;
+              let num2 = document.getElementById("num2").value;
+              let result = Number(num1) * Number(num2);
+              document.getElementById("result").value = result;
+            }
+            function divide() {
+              let num1 = document.getElementById("num1").value;
+              let num2 = document.getElementById("num2").value;
+              let result = Number(num1) / Number(num2);
+              document.getElementById("result").value = result;
+            }
+          </script>
+
+
+</n>
+</body>
+</html>
