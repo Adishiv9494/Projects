@@ -1,6 +1,6 @@
 import { Outlet, Navigate, Route, Routes, useLocation } from "react-router-dom";
 
-import { Footer, Navbar } from "./components";
+import { Footer, Navbar } from "../components";
 import {
   About,
   AuthPage,
@@ -10,7 +10,7 @@ import {
   JobDetail,
   UploadJob,
   UserProfile,
-} from "./pages";
+} from ".";
 import { useSelector } from "react-redux";
 
 function Layout() {
