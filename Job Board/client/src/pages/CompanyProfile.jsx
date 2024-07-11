@@ -162,7 +162,6 @@ const CompanyProfile = () => {
   const [info, setInfo] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [openForm, setOpenForm] = useState(false);
-
   useEffect(() => {
     setInfo(companies[parseInt(params?.id) - 1 ?? 0]);
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
